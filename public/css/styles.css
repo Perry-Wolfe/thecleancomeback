@@ -1862,3 +1862,79 @@ button {
   }
   .campaign-three figure { flex: 0 0 84vw; scroll-snap-align: start; }
 }
+
+/* V6.1 image framing refinement — preserve full compositions */
+.hero-poster {
+  aspect-ratio: 760 / 328;
+}
+.hero-poster img,
+.page-hero-media img {
+  object-fit: contain;
+  object-position: center;
+  background: var(--studio);
+}
+.page-hero:not(.is-stacked) {
+  min-height: 0;
+  align-items: center;
+}
+.page-hero:not(.is-stacked) .page-hero-media {
+  aspect-ratio: 760 / 328;
+  margin-right: var(--gutter);
+  border: 1px solid var(--rule);
+}
+.shelf-media {
+  aspect-ratio: 16 / 10;
+  padding: clamp(10px, 1.25vw, 20px);
+}
+.shelf-media img,
+.product-media img {
+  object-fit: contain;
+  object-position: center;
+}
+.product-media {
+  padding: 12px;
+}
+.finder-result img {
+  aspect-ratio: 640 / 303;
+  object-fit: contain;
+  object-position: center;
+}
+.campaign-three img {
+  object-fit: contain;
+  object-position: center;
+  background: var(--studio);
+}
+.split-media img {
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+.page-hero.is-stacked .page-hero-media {
+  width: min(100% - (2 * var(--gutter)), 1240px);
+  margin-inline: auto;
+}
+.page-hero.is-stacked .page-hero-media img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+@media (max-width: 900px) {
+  .hero-poster,
+  .page-hero-media,
+  .page-hero:not(.is-stacked) .page-hero-media {
+    aspect-ratio: auto;
+    max-height: none;
+    margin: 0;
+  }
+  .hero-poster img,
+  .page-hero-media img {
+    width: 100%;
+    height: auto;
+  }
+  .shelf-media {
+    aspect-ratio: 16 / 10;
+  }
+  .finder-result img {
+    aspect-ratio: 640 / 303;
+  }
+}
