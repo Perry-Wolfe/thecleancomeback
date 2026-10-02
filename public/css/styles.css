@@ -1779,3 +1779,86 @@ button {
 .global-actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.5rem; }
 @media (max-width:900px){ .global-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.global-grid article:nth-child(2){border-right:0}.global-grid article:nth-child(-n+2){border-bottom:1px solid var(--line)} }
 @media (max-width:540px){ .global-grid{grid-template-columns:1fr}.global-grid article{border-right:0;border-bottom:1px solid var(--line)}.global-grid article:last-child{border-bottom:0} }
+
+/* V6 brand-system refinements */
+.trust-strip {
+  border-block: 1px solid var(--rule);
+  background: var(--paper);
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+}
+.trust-grid span {
+  padding: 13px 18px;
+  border-right: 1px solid var(--rule);
+  text-align: center;
+  font-size: var(--step--1);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.trust-grid span:last-child { border-right: 0; }
+
+.hero {
+  min-height: 0;
+  align-items: center;
+  padding-block: clamp(36px, 5vw, 72px);
+}
+.hero-poster {
+  margin-right: var(--gutter);
+  aspect-ratio: 760 / 328;
+  min-height: 0;
+  border: 1px solid var(--rule);
+  background: var(--studio);
+}
+.hero-poster img { object-position: center; }
+
+.campaign-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  overflow: visible;
+  padding-inline: var(--gutter);
+}
+.campaign-three figure {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+.campaign-three img {
+  width: 100%;
+  aspect-ratio: 16 / 7.6;
+  object-fit: cover;
+  display: block;
+}
+.campaign-three figcaption {
+  padding: 12px 14px 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: var(--step--1);
+}
+
+.shelf-media img,
+.page-hero-media img,
+.product-media img {
+  filter: saturate(.96) contrast(.98);
+}
+
+@media (max-width: 900px) {
+  .trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trust-grid span:nth-child(2) { border-right: 0; }
+  .trust-grid span:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+  .hero { padding-block: 0; }
+  .hero-poster { margin: 0; aspect-ratio: 16 / 9; }
+  .campaign-three {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+  }
+  .campaign-three figure { flex: 0 0 84vw; scroll-snap-align: start; }
+}

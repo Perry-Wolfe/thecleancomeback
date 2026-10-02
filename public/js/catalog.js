@@ -18,8 +18,8 @@ export const PRODUCTS = [
     name: "Pure Energy",
     pack: "Mixed 12-pack",
     price: 2999,
-    image: "energy-lineup",
-    alt: "Four Pure Energy cans in a row",
+    image: "energy-lineup-new",
+    alt: "Pure Energy cans in Peach, Apple, Watermelon and Tropical",
   },
   {
     id: "energy-24",
@@ -27,8 +27,8 @@ export const PRODUCTS = [
     name: "Pure Energy",
     pack: "Mixed 24-pack",
     price: 5499,
-    image: "energy-lineup-2",
-    alt: "Pure Energy can held out of a convertible",
+    image: "energy-lineup-new",
+    alt: "Pure Energy cans in Peach, Apple, Watermelon and Tropical",
   },
   {
     id: "protein-vanilla",
@@ -82,8 +82,8 @@ export const PRODUCTS = [
     name: "Pure Pop",
     pack: "Mixed 12-pack",
     price: 2799,
-    image: "pop-lineup",
-    alt: "Pure Pop cans in Apple, Peach, Watermelon and Tropical",
+    image: "pop-lineup-new",
+    alt: "Pure Pop cans in Peach, Apple, Watermelon and Tropical",
   },
   {
     id: "pop-24",
@@ -91,8 +91,8 @@ export const PRODUCTS = [
     name: "Pure Pop",
     pack: "Mixed 24-pack",
     price: 4999,
-    image: "pop-lineup",
-    alt: "Pure Pop cans in Apple, Peach, Watermelon and Tropical",
+    image: "pop-lineup-new",
+    alt: "Pure Pop cans in Peach, Apple, Watermelon and Tropical",
   },
 ];
 

@@ -47,5 +47,5 @@ Canonical URLs and the social share image point to `https://thecleancomeback.com
 ## Before launch
 
 - Confirm every claim in the "On the can" panels and product copy matches the final printed labels.
-- Pure Energy flavors on the site are Apple, Peach, Watermelon and Tropical. The current Pure Energy photography shows Citrus, Lush Ice, Berry and Original cans. Reshoot or update one side so they match.
+- Product photography and site copy are aligned to the current flavor architecture: Pure Energy and Pure Pop in Peach, Apple, Watermelon and Tropical; Perry's Protein in Matcha, Vanilla, Chocolate and Strawberry.
 - Run a test order with a Stripe test key and card `4242 4242 4242 4242`.
